@@ -4,7 +4,7 @@
      "petroleo" -> A. Azul petróleo y gris
      "umb"      -> B. Colores UMB
    ========================================================= */
-const PALETA_POR_DEFECTO = "petroleo";
+const PALETA_POR_DEFECTO = "umb";
 
 (function () {
   var raiz = document.documentElement;
