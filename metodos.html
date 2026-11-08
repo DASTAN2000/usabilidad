@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Métodos de evaluación | Usabilidad</title>
+  <meta name="description" content="Cómo saber si un diseño es usable: métodos de inspección con expertos, de indagación con usuarios y de prueba con tareas reales.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html">Ciclo de vida</a></li>
+        <li><a href="metodos.html" aria-current="page">Métodos de evaluación</a></li>
+        <li><a href="dcu.html">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><span aria-current="page">Métodos de evaluación</span></li>
+    </ol>
+  </nav>
+  <div class="contenedor">
+    <main id="contenido" tabindex="-1">
+      <article class="articulo">
+        <h1>Métodos de evaluación de usabilidad</h1>
+        <p class="entradilla">Cómo saber si un diseño es usable: métodos de inspección con expertos, de indagación con usuarios y de prueba con tareas reales.</p>
+        <section aria-labelledby="tipos"><h2 id="tipos">Tres familias de métodos</h2>
+<p>Los métodos se suelen agrupar según quién evalúa y cómo <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span>:</p>
+<ul class="tarjetas">
+  <li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">1</span><h3>Inspección</h3><p>Expertos revisan la interfaz contra principios o estándares, sin usuarios. Es rápida y barata.</p></li>
+  <li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">2</span><h3>Indagación</h3><p>Se pregunta a los usuarios qué necesitan, piensan o sienten: entrevistas, encuestas, card sorting.</p></li>
+  <li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">3</span><h3>Test con usuarios</h3><p>Personas reales realizan tareas y se observa lo que hacen. Es la evidencia más directa.</p></li>
+</ul>
+</section>
+<section aria-labelledby="heuristica"><h2 id="heuristica">Evaluación heurística</h2>
+<p>Varios evaluadores revisan la interfaz por separado usando un conjunto de principios. Las más usadas son las 10 heurísticas de Nielsen <span class="cita"><a href="referencias.html#ref-9" aria-label="Referencia 9">[9]</a></span>:</p>
+<ol class="pasos">
+  <li><strong>Visibilidad del estado del sistema:</strong> el usuario siempre sabe qué está pasando.</li>
+  <li><strong>Relación entre el sistema y el mundo real:</strong> lenguaje y conceptos familiares para el usuario.</li>
+  <li><strong>Control y libertad del usuario:</strong> salidas claras, deshacer y rehacer.</li>
+  <li><strong>Consistencia y estándares:</strong> lo mismo se ve y funciona igual en todas partes.</li>
+  <li><strong>Prevención de errores:</strong> mejor evitar el error que mostrar un buen mensaje.</li>
+  <li><strong>Reconocer antes que recordar:</strong> opciones visibles en lugar de memorizar.</li>
+  <li><strong>Flexibilidad y eficiencia de uso:</strong> atajos para expertos sin estorbar a novatos.</li>
+  <li><strong>Diseño estético y minimalista:</strong> solo la información relevante.</li>
+  <li><strong>Ayudar a reconocer, diagnosticar y recuperarse de errores:</strong> mensajes claros con solución.</li>
+  <li><strong>Ayuda y documentación:</strong> fácil de buscar y orientada a tareas.</li>
+</ol>
+<p>Otros métodos de inspección son el <strong>recorrido cognitivo</strong>, que simula paso a paso cómo un usuario nuevo resolvería una tarea, y la <strong>revisión de estándares</strong>, por ejemplo, contra WCAG <span class="cita"><a href="referencias.html#ref-8" aria-label="Referencia 8">[8]</a></span>.</p>
+</section>
+<section aria-labelledby="test"><h2 id="test">Test con usuarios</h2>
+<p>Es considerado uno de los mejores métodos para evaluar la usabilidad, porque mide lo que la gente hace y no lo que dice que haría <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span>. El procedimiento básico es:</p>
+<ol class="pasos">
+  <li><strong>Reclutar</strong> participantes que representen a los usuarios reales.</li>
+  <li><strong>Definir tareas</strong> realistas, por ejemplo, "Encuentra un artículo de 2023 sobre accesibilidad".</li>
+  <li><strong>Observar sin guiar,</strong> pidiendo que piensen en voz alta mientras trabajan.</li>
+  <li><strong>Medir</strong> tareas completadas, tiempo, errores y satisfacción.</li>
+  <li><strong>Analizar y rediseñar,</strong> y luego volver a probar.</li>
+</ol>
+<p>Con unos 5 participantes por ronda se detecta la mayoría de los problemas principales <span class="cita"><a href="referencias.html#ref-10" aria-label="Referencia 10">[10]</a></span>. Puede hacerse incluso con prototipos en papel antes de programar <span class="cita"><a href="referencias.html#ref-12" aria-label="Referencia 12">[12]</a></span>.</p>
+</section>
+<section aria-labelledby="comparativa"><h2 id="comparativa">Cuándo usar cada método</h2>
+<div class="tabla-envoltura"><table>
+<caption>Comparación de métodos de evaluación</caption>
+<thead><tr><th scope="col">Método</th><th scope="col">Participantes</th><th scope="col">Momento ideal</th><th scope="col">Ventaja</th><th scope="col">Limitación</th></tr></thead>
+<tbody>
+<tr><th scope="row">Evaluación heurística</th><td>3 a 5 expertos</td><td>Desde el prototipo</td><td>Rápida y económica</td><td>No refleja usuarios reales</td></tr>
+<tr><th scope="row">Recorrido cognitivo</th><td>Expertos</td><td>Diseño temprano</td><td>Revela problemas de aprendizaje</td><td>Se enfoca en usuarios novatos</td></tr>
+<tr><th scope="row">Card sorting</th><td>Usuarios</td><td>Antes de definir el menú</td><td>Organiza según el modelo mental del usuario</td><td>No evalúa la interfaz final</td></tr>
+<tr><th scope="row">Encuesta SUS</th><td>Usuarios</td><td>Después de usar el producto</td><td>Puntaje comparable de 0 a 100 <span class="cita"><a href="referencias.html#ref-14" aria-label="Referencia 14">[14]</a></span></td><td>No explica la causa del problema</td></tr>
+<tr><th scope="row">Test con usuarios</th><td>5 por ronda</td><td>Todo el ciclo</td><td>Evidencia directa</td><td>Requiere más tiempo y preparación</td></tr>
+<tr><th scope="row">Analítica web</th><td>Usuarios reales</td><td>Después del lanzamiento</td><td>Datos de uso a gran escala</td><td>Dice qué pasa, no por qué</td></tr>
+</tbody></table></div>
+</section>
+        <aside class="recuadro recuadro--sitio" aria-label="Cómo aplica esto este sitio"><span class="recuadro__etiqueta">Aplicado en este sitio</span><p>Antes de publicar este sitio se revisó con las 10 heurísticas. Por ejemplo, la heurística 1 se cumple al resaltar en el menú la página actual, y la 6 con las migas de pan, que muestran dónde estás sin tener que recordarlo.</p></aside>
+      </article>
+      <nav class="paginacion" aria-label="Páginas anterior y siguiente"><a class="anterior" href="ciclo-vida.html" rel="prev"><small>← Anterior</small><strong>Ciclo de vida</strong></a><a class="siguiente" href="dcu.html" rel="next"><small>Siguiente →</small><strong>Diseño centrado en el usuario</strong></a></nav>
+    </main>
+    <nav class="indice" aria-label="En esta página">
+      <h2>En esta página</h2>
+      <ol><li><a href="#tipos">Tres familias de métodos</a></li>
+<li><a href="#heuristica">Evaluación heurística</a></li>
+<li><a href="#test">Test con usuarios</a></li>
+<li><a href="#comparativa">Cuándo usar cada método</a></li></ol>
+    </nav>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

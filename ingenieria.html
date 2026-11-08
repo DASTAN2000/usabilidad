@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingeniería de usabilidad | Usabilidad</title>
+  <meta name="description" content="Cómo pasar de "queremos que sea fácil de usar" a objetivos medibles, métodos sistemáticos y decisiones basadas en evidencia.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html" aria-current="page">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html">Ciclo de vida</a></li>
+        <li><a href="metodos.html">Métodos de evaluación</a></li>
+        <li><a href="dcu.html">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><span aria-current="page">Ingeniería de usabilidad</span></li>
+    </ol>
+  </nav>
+  <div class="contenedor">
+    <main id="contenido" tabindex="-1">
+      <article class="articulo">
+        <h1>Ingeniería de usabilidad</h1>
+        <p class="entradilla">Cómo pasar de "queremos que sea fácil de usar" a objetivos medibles, métodos sistemáticos y decisiones basadas en evidencia.</p>
+        <section aria-labelledby="concepto"><h2 id="concepto">Concepto</h2>
+<p>La ingeniería de usabilidad es el conjunto de actividades y métodos que se aplican de forma sistemática a lo largo del desarrollo de un producto para garantizar que alcance un nivel de usabilidad previamente definido <span class="cita"><a href="referencias.html#ref-3" aria-label="Referencia 3">[3]</a></span>. Su idea central es tratar la usabilidad como un requisito más del software, con objetivos, mediciones y pruebas, en lugar de dejarla a la intuición del diseñador.</p>
+<p>En la práctica, esto se traduce en tres compromisos: conocer al usuario desde el inicio, definir metas medibles y evaluar de forma iterativa con personas reales <span class="cita"><a href="referencias.html#ref-3" aria-label="Referencia 3">[3]</a></span>.</p>
+</section>
+<section aria-labelledby="objetivos"><h2 id="objetivos">Objetivos de usabilidad medibles</h2>
+<p>Un objetivo de usabilidad bien planteado se puede verificar. Algunos ejemplos:</p>
+<div class="tabla-envoltura"><table>
+<caption>Ejemplos de objetivos de usabilidad para un catálogo bibliográfico</caption>
+<thead><tr><th scope="col">Atributo</th><th scope="col">Objetivo medible</th></tr></thead>
+<tbody>
+<tr><th scope="row">Eficacia</th><td>El 90 % de los usuarios nuevos encuentra un libro por título sin ayuda.</td></tr>
+<tr><th scope="row">Eficiencia</th><td>Reservar un ejemplar toma menos de 60 segundos.</td></tr>
+<tr><th scope="row">Errores</th><td>Menos de 1 búsqueda fallida por cada 10 intentos.</td></tr>
+<tr><th scope="row">Satisfacción</th><td>Puntaje igual o superior a 70 sobre 100 en el cuestionario SUS <span class="cita"><a href="referencias.html#ref-14" aria-label="Referencia 14">[14]</a></span>.</td></tr>
+</tbody></table></div>
+<p>Sin objetivos así, el equipo no puede saber cuándo el producto es "suficientemente usable" ni comparar una versión con otra.</p>
+</section>
+<section aria-labelledby="actividades"><h2 id="actividades">Actividades según Nielsen</h2>
+<p>En su libro <em>Usability Engineering</em>, Nielsen propone un conjunto de actividades que se distribuyen a lo largo del proyecto <span class="cita"><a href="referencias.html#ref-3" aria-label="Referencia 3">[3]</a></span>:</p>
+<ol class="pasos">
+  <li><strong>Conocer al usuario:</strong> características individuales, tareas actuales y contexto.</li>
+  <li><strong>Análisis competitivo:</strong> estudiar productos similares como prototipos ya construidos.</li>
+  <li><strong>Definir metas de usabilidad</strong> y priorizar los atributos más importantes.</li>
+  <li><strong>Diseño paralelo:</strong> explorar varias alternativas antes de elegir una.</li>
+  <li><strong>Diseño participativo:</strong> involucrar a usuarios en las decisiones.</li>
+  <li><strong>Diseño coordinado</strong> de toda la interfaz para mantener la consistencia.</li>
+  <li><strong>Aplicar guías y evaluación heurística.</strong></li>
+  <li><strong>Prototipado</strong> temprano y barato.</li>
+  <li><strong>Pruebas empíricas</strong> con usuarios.</li>
+  <li><strong>Diseño iterativo:</strong> corregir y volver a probar.</li>
+  <li><strong>Recoger retroalimentación</strong> del uso real después del lanzamiento.</li>
+</ol>
+</section>
+<section aria-labelledby="descuento"><h2 id="descuento">Ingeniería de usabilidad "de bajo costo"</h2>
+<p>Nielsen también defendió la <em>discount usability engineering</em>: usar métodos sencillos y baratos (escenarios, pensamiento en voz alta, evaluación heurística) en lugar de no hacer nada por falta de presupuesto <span class="cita"><a href="referencias.html#ref-3" aria-label="Referencia 3">[3]</a></span>. Su argumento más conocido es que una prueba con unos 5 usuarios ya revela la mayoría de los problemas importantes, y que es mejor hacer varias rondas pequeñas que una sola grande <span class="cita"><a href="referencias.html#ref-10" aria-label="Referencia 10">[10]</a></span>. Las pruebas con bocetos en papel siguen esta misma lógica <span class="cita"><a href="referencias.html#ref-12" aria-label="Referencia 12">[12]</a></span>.</p>
+</section>
+        <aside class="recuadro recuadro--sitio" aria-label="Cómo aplica esto este sitio"><span class="recuadro__etiqueta">Aplicado en este sitio</span><p>El objetivo medible de este sitio es que cualquier tema se alcance en un máximo de 2 clics desde cualquier página: 1 clic desde el menú y, dentro de la página, 1 clic en el índice lateral.</p></aside>
+      </article>
+      <nav class="paginacion" aria-label="Páginas anterior y siguiente"><a class="anterior" href="accesibilidad.html" rel="prev"><small>← Anterior</small><strong>Usabilidad y accesibilidad</strong></a><a class="siguiente" href="ciclo-vida.html" rel="next"><small>Siguiente →</small><strong>Ciclo de vida</strong></a></nav>
+    </main>
+    <nav class="indice" aria-label="En esta página">
+      <h2>En esta página</h2>
+      <ol><li><a href="#concepto">Concepto</a></li>
+<li><a href="#objetivos">Objetivos de usabilidad medibles</a></li>
+<li><a href="#actividades">Actividades según Nielsen</a></li>
+<li><a href="#descuento">Ingeniería de usabilidad "de bajo costo"</a></li></ol>
+    </nav>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

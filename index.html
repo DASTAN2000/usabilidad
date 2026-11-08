@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | Usabilidad</title>
+  <meta name="description" content="Sitio sobre usabilidad: nociones básicas, accesibilidad, ingeniería de usabilidad, ciclo de vida, métodos de evaluación y diseño centrado en el usuario.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html">Ciclo de vida</a></li>
+        <li><a href="metodos.html">Métodos de evaluación</a></li>
+        <li><a href="dcu.html">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="contenedor contenedor--ancho">
+    <main id="contenido" tabindex="-1">
+      <section class="portada" aria-labelledby="titulo-portada">
+        <h1 id="titulo-portada">Usabilidad: diseñar para las personas</h1>
+        <p class="entradilla">Una guía en 7 temas sobre qué es la usabilidad, cómo se relaciona con la accesibilidad, cómo se integra en el desarrollo de software y cómo se evalúa, desde el enfoque del diseño centrado en el usuario.</p>
+        <a class="boton" href="nociones.html">Empezar por las nociones básicas</a>
+      </section>
+      <h2 id="temas">Temas</h2>
+      <ul class="tarjetas">
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">1</span><h3><a href="nociones.html">Nociones básicas</a></h3><p>Qué es la usabilidad, cómo se define formalmente y por qué importa a quienes diseñan y gestionan servicios de información.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">2</span><h3><a href="accesibilidad.html">Usabilidad y accesibilidad</a></h3><p>Dos conceptos distintos pero inseparables: un sitio que excluye a una parte de sus usuarios no puede considerarse fácil de usar.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">3</span><h3><a href="ingenieria.html">Ingeniería de usabilidad</a></h3><p>Cómo pasar de "queremos que sea fácil de usar" a objetivos medibles, métodos sistemáticos y decisiones basadas en evidencia.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">4</span><h3><a href="ciclo-vida.html">Ciclo de vida</a></h3><p>Dos modelos de proceso que integran la usabilidad en todas las fases del desarrollo de software: el de Deborah Mayhew y el MPIu+a de Granollers.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">5</span><h3><a href="metodos.html">Métodos de evaluación</a></h3><p>Cómo saber si un diseño es usable: métodos de inspección con expertos, de indagación con usuarios y de prueba con tareas reales.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">6</span><h3><a href="dcu.html">Diseño centrado en el usuario</a></h3><p>Un enfoque en el que el usuario no es una idea abstracta, sino el criterio que guía cada decisión del proceso de diseño.</p></li>
+<li class="tarjeta"><span class="tarjeta__num" aria-hidden="true">7</span><h3><a href="referencias.html">Referencias</a></h3><p>Fuentes citadas en formato IEEE.</p></li>
+      </ul>
+      <section class="recuadro recuadro--sitio" aria-labelledby="como">
+        <span class="recuadro__etiqueta">Cómo está diseñado este sitio</span>
+        <h2 id="como" style="margin-top:.2rem">Un sitio que aplica lo que explica</h2>
+        <ul>
+          <li><strong>Navegación consistente:</strong> el mismo menú y pie en todas las páginas, con la página actual resaltada.</li>
+          <li><strong>Orientación:</strong> migas de pan, índice de cada página y botones de anterior y siguiente.</li>
+          <li><strong>Accesibilidad:</strong> navegable con teclado, enlace para saltar al contenido, contraste AA y HTML semántico.</li>
+          <li><strong>Adaptable:</strong> se reorganiza en celulares y tabletas sin perder contenido.</li>
+          <li><strong>Lectura cómoda:</strong> líneas de unos 70 caracteres, títulos jerárquicos y textos en párrafos cortos.</li>
+          <li><strong>Liviano:</strong> sin librerías externas, carga rápido incluso con conexión lenta.</li>
+        </ul>
+        <p>Cada página cierra con un recuadro "Aplicado en este sitio" que conecta la teoría con una decisión de diseño concreta.</p>
+      </section>
+    </main>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

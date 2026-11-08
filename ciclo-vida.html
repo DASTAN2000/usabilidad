@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ciclo de vida | Usabilidad</title>
+  <meta name="description" content="Dos modelos de proceso que integran la usabilidad en todas las fases del desarrollo de software: el de Deborah Mayhew y el MPIu+a de Granollers.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html" aria-current="page">Ciclo de vida</a></li>
+        <li><a href="metodos.html">Métodos de evaluación</a></li>
+        <li><a href="dcu.html">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><span aria-current="page">Ciclo de vida</span></li>
+    </ol>
+  </nav>
+  <div class="contenedor">
+    <main id="contenido" tabindex="-1">
+      <article class="articulo">
+        <h1>Ciclo de vida de la ingeniería de usabilidad</h1>
+        <p class="entradilla">Dos modelos de proceso que integran la usabilidad en todas las fases del desarrollo de software: el de Deborah Mayhew y el MPIu+a de Granollers.</p>
+        <section aria-labelledby="mayhew"><h2 id="mayhew">Modelo de Mayhew (1999)</h2>
+<p>Deborah Mayhew propuso un ciclo de vida que corre en paralelo al desarrollo de software y que organiza las tareas de usabilidad en tres fases <span class="cita"><a href="referencias.html#ref-6" aria-label="Referencia 6">[6]</a></span>:</p>
+<div class="fases">
+  <section class="fase" aria-labelledby="fase1"><h3 id="fase1">1. Análisis de requisitos</h3>
+    <ul><li>Perfil de usuarios</li><li>Análisis contextual de tareas</li><li>Capacidades y limitaciones de la plataforma</li><li>Principios generales de diseño</li><li>Metas de usabilidad</li><li>Guía de estilo inicial</li></ul></section>
+  <section class="fase" aria-labelledby="fase2"><h3 id="fase2">2. Diseño, pruebas y desarrollo</h3>
+    <ul><li><strong>Nivel 1:</strong> reingeniería del trabajo y modelo conceptual, con prototipos y evaluación iterativa</li><li><strong>Nivel 2:</strong> estándares de diseño de pantallas, con prototipos y evaluación</li><li><strong>Nivel 3:</strong> diseño detallado de la interfaz y evaluación iterativa</li></ul></section>
+  <section class="fase" aria-labelledby="fase3"><h3 id="fase3">3. Instalación</h3>
+    <ul><li>Retroalimentación de los usuarios en el uso real</li><li>Ajustes y mejoras para siguientes versiones</li></ul></section>
+</div>
+<p>La idea más importante del modelo es que <strong>cada nivel de diseño se valida con usuarios antes de pasar al siguiente</strong>. Así, los errores conceptuales se detectan cuando aún son baratos de corregir, y no al final del proyecto.</p>
+</section>
+<section aria-labelledby="mpiua"><h2 id="mpiua">Modelo MPIu+a de Granollers</h2>
+<p>El Modelo de Proceso de la Ingeniería de la Usabilidad y de la Accesibilidad (MPIu+a), desarrollado en la Universidad de Lleida, integra la ingeniería del software con la interacción persona-ordenador <span class="cita"><a href="referencias.html#ref-7" aria-label="Referencia 7">[7]</a></span>. Se representa en tres columnas con el usuario en el centro:</p>
+<ul>
+  <li><strong>Columna izquierda:</strong> las fases clásicas de la ingeniería del software: análisis de requisitos, diseño, implementación y lanzamiento.</li>
+  <li><strong>Columna central:</strong> el prototipado, que permite probar ideas antes de construir.</li>
+  <li><strong>Columna derecha:</strong> la evaluación, que agrupa los distintos métodos para verificar la usabilidad y la accesibilidad.</li>
+</ul>
+<p>El modelo es iterativo y no lineal: el equipo decide cuántas veces recorrer el ciclo. Un equipo acostumbrado al enfoque clásico puede empezar solo por la columna izquierda e ir incorporando prototipado y evaluación <span class="cita"><a href="referencias.html#ref-7" aria-label="Referencia 7">[7]</a></span>.</p>
+</section>
+<section aria-labelledby="comparacion"><h2 id="comparacion">Comparación</h2>
+<div class="tabla-envoltura"><table>
+<caption>Comparación de los dos modelos de ciclo de vida</caption>
+<thead><tr><th scope="col">Criterio</th><th scope="col">Mayhew</th><th scope="col">MPIu+a</th></tr></thead>
+<tbody>
+<tr><th scope="row">Estructura</th><td>Tres fases secuenciales con iteración interna</td><td>Tres columnas con iteración libre</td></tr>
+<tr><th scope="row">Accesibilidad</th><td>Implícita</td><td>Explícita, desde el nombre</td></tr>
+<tr><th scope="row">Integración con software</th><td>Paralela al desarrollo</td><td>Integrada en las mismas fases</td></tr>
+<tr><th scope="row">Mejor para</th><td>Proyectos grandes y formales</td><td>Equipos multidisciplinares y flexibles</td></tr>
+</tbody></table></div>
+</section>
+        <aside class="recuadro recuadro--sitio" aria-label="Cómo aplica esto este sitio"><span class="recuadro__etiqueta">Aplicado en este sitio</span><p>Este sitio pasó por un mini ciclo de vida: primero se definió el perfil del usuario (docente y estudiantes que leen sobre usabilidad), luego la estructura de 7 temas en el orden de la guía, después un prototipo y finalmente una revisión en escritorio y celular antes de publicarlo.</p></aside>
+      </article>
+      <nav class="paginacion" aria-label="Páginas anterior y siguiente"><a class="anterior" href="ingenieria.html" rel="prev"><small>← Anterior</small><strong>Ingeniería de usabilidad</strong></a><a class="siguiente" href="metodos.html" rel="next"><small>Siguiente →</small><strong>Métodos de evaluación</strong></a></nav>
+    </main>
+    <nav class="indice" aria-label="En esta página">
+      <h2>En esta página</h2>
+      <ol><li><a href="#mayhew">Modelo de Mayhew (1999)</a></li>
+<li><a href="#mpiua">Modelo MPIu+a de Granollers</a></li>
+<li><a href="#comparacion">Comparación</a></li></ol>
+    </nav>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

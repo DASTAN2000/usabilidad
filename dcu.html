@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diseño centrado en el usuario | Usabilidad</title>
+  <meta name="description" content="Un enfoque en el que el usuario no es una idea abstracta, sino el criterio que guía cada decisión del proceso de diseño.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html">Ciclo de vida</a></li>
+        <li><a href="metodos.html">Métodos de evaluación</a></li>
+        <li><a href="dcu.html" aria-current="page">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><span aria-current="page">Diseño centrado en el usuario</span></li>
+    </ol>
+  </nav>
+  <div class="contenedor">
+    <main id="contenido" tabindex="-1">
+      <article class="articulo">
+        <h1>Diseño web centrado en el usuario</h1>
+        <p class="entradilla">Un enfoque en el que el usuario no es una idea abstracta, sino el criterio que guía cada decisión del proceso de diseño.</p>
+        <section aria-labelledby="concepto"><h2 id="concepto">Concepto</h2>
+<p>El término <em>user-centered design</em> se popularizó con el trabajo de Norman y Draper en 1986 <span class="cita"><a href="referencias.html#ref-15" aria-label="Referencia 15">[15]</a></span>. Su idea es que el diseño debe adaptarse a las capacidades, conocimientos y modelos mentales de las personas, y no obligarlas a adaptarse a la tecnología <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span>.</p>
+<p>En el contexto web, Hassan Montero, Martín Fernández e Iazza lo describen como un enfoque que dirige todo el proceso de diseño hacia el usuario. Para ello se apoya en técnicas que confirman empíricamente que el diseño responde a sus necesidades, habilidades y objetivos, porque las buenas intenciones del diseñador no bastan <span class="cita"><a href="referencias.html#ref-2" aria-label="Referencia 2">[2]</a></span>.</p>
+</section>
+<section aria-labelledby="principios"><h2 id="principios">Principios según ISO 9241-210</h2>
+<p>La norma ISO 9241-210:2019 establece seis principios del diseño centrado en el ser humano <span class="cita"><a href="referencias.html#ref-5" aria-label="Referencia 5">[5]</a></span>:</p>
+<ol class="pasos">
+  <li>El diseño se basa en una <strong>comprensión explícita</strong> de los usuarios, las tareas y los entornos.</li>
+  <li>Los usuarios <strong>participan</strong> durante todo el diseño y el desarrollo.</li>
+  <li>El diseño se orienta y se ajusta mediante <strong>evaluaciones centradas en el usuario</strong>.</li>
+  <li>El proceso es <strong>iterativo</strong>.</li>
+  <li>El diseño aborda <strong>toda la experiencia</strong> del usuario.</li>
+  <li>El equipo incluye <strong>habilidades y perspectivas multidisciplinares</strong>.</li>
+</ol>
+</section>
+<section aria-labelledby="proceso"><h2 id="proceso">Proceso de diseño web centrado en el usuario</h2>
+<p>Hassan Montero et al. organizan el proceso en seis etapas; las de diseño, prototipado y evaluación se repiten de forma cíclica hasta lograr un resultado satisfactorio <span class="cita"><a href="referencias.html#ref-2" aria-label="Referencia 2">[2]</a></span>:</p>
+<ol class="pasos">
+  <li><strong>Planificación:</strong> identificar objetivos del sitio, necesidades y requisitos de la audiencia.</li>
+  <li><strong>Diseño:</strong> modelado del usuario (perfiles, personas, escenarios), diseño conceptual (arquitectura de la información), diseño visual y definición del estilo, y diseño de contenidos.</li>
+  <li><strong>Prototipado:</strong> desde bocetos en papel hasta prototipos navegables.</li>
+  <li><strong>Evaluación:</strong> por inspección (evaluación heurística) y mediante test con usuarios.</li>
+  <li><strong>Implementación y lanzamiento.</strong></li>
+  <li><strong>Mantenimiento y seguimiento:</strong> opiniones de los usuarios y análisis de su comportamiento en el sitio.</li>
+</ol>
+</section>
+<section aria-labelledby="tecnicas"><h2 id="tecnicas">Técnicas habituales</h2>
+<ul class="tarjetas">
+  <li class="tarjeta"><h3>Personas</h3><p>Usuarios arquetípicos basados en datos reales que el equipo usa para tomar decisiones.</p></li>
+  <li class="tarjeta"><h3>Escenarios</h3><p>Historias de cómo una persona usaría el sitio para cumplir un objetivo.</p></li>
+  <li class="tarjeta"><h3>Card sorting</h3><p>Los usuarios agrupan contenidos para revelar la organización que esperan.</p></li>
+  <li class="tarjeta"><h3>Wireframes y prototipos</h3><p>Representaciones tempranas para probar estructura y navegación antes de programar.</p></li>
+</ul>
+<p>Como señala Krug, el objetivo final es que el usuario no tenga que pensar en cómo usar el sitio, sino solo en lo que quiere hacer <span class="cita"><a href="referencias.html#ref-11" aria-label="Referencia 11">[11]</a></span>.</p>
+</section>
+        <aside class="recuadro recuadro--sitio" aria-label="Cómo aplica esto este sitio"><span class="recuadro__etiqueta">Aplicado en este sitio</span><p>El orden de las páginas sigue el modelo mental de quien estudia el tema: primero qué es la usabilidad, luego cómo se gestiona, cómo se evalúa y cómo se diseña. Los botones "Anterior" y "Siguiente" permiten leerlo como un recorrido sin volver al menú.</p></aside>
+      </article>
+      <nav class="paginacion" aria-label="Páginas anterior y siguiente"><a class="anterior" href="metodos.html" rel="prev"><small>← Anterior</small><strong>Métodos de evaluación</strong></a><a class="siguiente" href="referencias.html" rel="next"><small>Siguiente →</small><strong>Referencias</strong></a></nav>
+    </main>
+    <nav class="indice" aria-label="En esta página">
+      <h2>En esta página</h2>
+      <ol><li><a href="#concepto">Concepto</a></li>
+<li><a href="#principios">Principios según ISO 9241-210</a></li>
+<li><a href="#proceso">Proceso de diseño web centrado en el usuario</a></li>
+<li><a href="#tecnicas">Técnicas habituales</a></li></ol>
+    </nav>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

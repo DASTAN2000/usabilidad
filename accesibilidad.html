@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usabilidad y accesibilidad | Usabilidad</title>
+  <meta name="description" content="Dos conceptos distintos pero inseparables: un sitio que excluye a una parte de sus usuarios no puede considerarse fácil de usar.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body id="arriba">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="encabezado__interno">
+      <a class="marca" href="index.html">Usabilidad<span>Arquitectura de Información y Usabilidad · UMB</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nociones.html">Nociones básicas</a></li>
+        <li><a href="accesibilidad.html" aria-current="page">Usabilidad y accesibilidad</a></li>
+        <li><a href="ingenieria.html">Ingeniería de usabilidad</a></li>
+        <li><a href="ciclo-vida.html">Ciclo de vida</a></li>
+        <li><a href="metodos.html">Métodos de evaluación</a></li>
+        <li><a href="dcu.html">Diseño centrado en el usuario</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><span aria-current="page">Usabilidad y accesibilidad</span></li>
+    </ol>
+  </nav>
+  <div class="contenedor">
+    <main id="contenido" tabindex="-1">
+      <article class="articulo">
+        <h1>Usabilidad y accesibilidad</h1>
+        <p class="entradilla">Dos conceptos distintos pero inseparables: un sitio que excluye a una parte de sus usuarios no puede considerarse fácil de usar.</p>
+        <section aria-labelledby="accesibilidad"><h2 id="accesibilidad">¿Qué es la accesibilidad?</h2>
+<div class="recuadro recuadro--definicion"><span class="recuadro__etiqueta">Definición</span><blockquote><p>Posibilidad de que un producto o servicio pueda ser accedido y usado por el mayor número posible de personas, independientemente de sus limitaciones propias o de las derivadas de su contexto de uso.</p><footer>Hassan Montero y Ortega Santamaría <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span></footer></blockquote></div>
+<p>Las limitaciones pueden ser permanentes (ceguera, sordera, movilidad reducida), temporales (un brazo fracturado) o situacionales (sol directo sobre la pantalla, conexión lenta, ruido). Por eso la accesibilidad beneficia a todos, no solo a las personas con discapacidad.</p>
+</section>
+<section aria-labelledby="relacion"><h2 id="relacion">Relación entre ambos conceptos</h2>
+<p>La usabilidad pregunta <em>"¿qué tan fácil es usarlo?"</em>; la accesibilidad pregunta <em>"¿quiénes pueden usarlo?"</em>. Los autores del Informe APEI sostienen que ambas no deben tratarse por separado: si un diseño no es usable no puede considerarse accesible, y viceversa <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span>.</p>
+<div class="tabla-envoltura"><table>
+<caption>Comparación entre usabilidad y accesibilidad</caption>
+<thead><tr><th scope="col">Aspecto</th><th scope="col">Usabilidad</th><th scope="col">Accesibilidad</th></tr></thead>
+<tbody>
+<tr><th scope="row">Enfoque</th><td>Facilidad, eficiencia y satisfacción de uso</td><td>Que nadie quede excluido del uso</td></tr>
+<tr><th scope="row">Referente principal</th><td>ISO 9241-11 <span class="cita"><a href="referencias.html#ref-4" aria-label="Referencia 4">[4]</a></span></td><td>WCAG 2.2 del W3C <span class="cita"><a href="referencias.html#ref-8" aria-label="Referencia 8">[8]</a></span></td></tr>
+<tr><th scope="row">Cómo se evalúa</th><td>Pruebas con usuarios, inspección heurística</td><td>Auditoría de criterios, lectores de pantalla, pruebas con usuarios con discapacidad</td></tr>
+<tr><th scope="row">Ejemplo de fallo</th><td>Un menú confuso que obliga a adivinar</td><td>Un botón que solo funciona con mouse</td></tr>
+</tbody></table></div>
+</section>
+<section aria-labelledby="wcag"><h2 id="wcag">Las pautas WCAG 2.2</h2>
+<p>Las Pautas de Accesibilidad para el Contenido Web (WCAG) del W3C son el estándar internacional de referencia. Su versión 2.2 se organiza en cuatro principios, conocidos por la sigla <strong>POUR</strong> <span class="cita"><a href="referencias.html#ref-8" aria-label="Referencia 8">[8]</a></span>:</p>
+<ol class="pasos">
+  <li><strong>Perceptible:</strong> la información debe poder percibirse por al menos un sentido. Ejemplo: texto alternativo en imágenes y subtítulos en videos.</li>
+  <li><strong>Operable:</strong> todas las funciones deben poder usarse, por ejemplo, solo con teclado y sin límites de tiempo injustificados.</li>
+  <li><strong>Comprensible:</strong> el contenido y el funcionamiento deben ser claros y predecibles.</li>
+  <li><strong>Robusto:</strong> el código debe funcionar con distintos navegadores y tecnologías de apoyo, como los lectores de pantalla.</li>
+</ol>
+<p>Cada criterio tiene un nivel de conformidad: <strong>A</strong> (mínimo), <strong>AA</strong> (el exigido habitualmente) y <strong>AAA</strong> (el más alto). Por ejemplo, el nivel AA exige un contraste mínimo de 4,5:1 entre texto normal y fondo.</p>
+<p>Las pautas son un punto de partida, no una garantía: cumplir los criterios técnicos no asegura por sí solo que el sitio sea realmente usable para personas con discapacidad <span class="cita"><a href="referencias.html#ref-1" aria-label="Referencia 1">[1]</a></span>.</p>
+</section>
+<section aria-labelledby="colombia"><h2 id="colombia">Marco en Colombia</h2>
+<p>En Colombia, el Ministerio de Tecnologías de la Información y las Comunicaciones expidió la Resolución 1519 de 2020, que establece los estándares de accesibilidad web que deben cumplir los sujetos obligados, tomando como base las pautas WCAG <span class="cita"><a href="referencias.html#ref-13" aria-label="Referencia 13">[13]</a></span>. Esto convierte la accesibilidad en una obligación para las entidades públicas, además de una buena práctica de diseño.</p>
+</section>
+        <aside class="recuadro recuadro--sitio" aria-label="Cómo aplica esto este sitio"><span class="recuadro__etiqueta">Aplicado en este sitio</span><p>Este sitio tiene un enlace oculto "Saltar al contenido" que aparece al presionar Tab, se puede recorrer completo con el teclado, muestra un borde visible en el elemento enfocado, usa colores con contraste AA y respeta la preferencia del sistema de reducir el movimiento.</p></aside>
+      </article>
+      <nav class="paginacion" aria-label="Páginas anterior y siguiente"><a class="anterior" href="nociones.html" rel="prev"><small>← Anterior</small><strong>Nociones básicas</strong></a><a class="siguiente" href="ingenieria.html" rel="next"><small>Siguiente →</small><strong>Ingeniería de usabilidad</strong></a></nav>
+    </main>
+    <nav class="indice" aria-label="En esta página">
+      <h2>En esta página</h2>
+      <ol><li><a href="#accesibilidad">¿Qué es la accesibilidad?</a></li>
+<li><a href="#relacion">Relación entre ambos conceptos</a></li>
+<li><a href="#wcag">Las pautas WCAG 2.2</a></li>
+<li><a href="#colombia">Marco en Colombia</a></li></ol>
+    </nav>
+  </div>
+  <footer class="pie">
+    <div class="pie__interno">
+      <p><strong>Sergio Alexander Sepulveda Alvarado</strong> · Ingeniería de Software · Universidad Manuela Beltrán</p>
+      <p>Arquitectura de Información y Usabilidad · Actividad 3: Usabilidad · 2026</p>
+    </div>
+  </footer>
+  <a class="arriba" href="#arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>
